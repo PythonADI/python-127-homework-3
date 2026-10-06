@@ -1,0 +1,49 @@
+#exercise_1.py — ასაკის კატეგორია
+age=int(input("how old are you?"))
+if age < 13:       
+    print("child")   
+elif age <= 17:    
+    print("teen")           
+else:                       
+    print("adult")
+
+
+#exercise_2.py — შეასწორეთ შეცდომა
+day = input("What day is it?\n").strip().lower()
+
+if day == "saturday" or day =="sunday":   
+    print("Weekend!")
+else:
+    print("Not the weekend.")
+
+#exer.1
+# day= input("what day is it\n").strip().lower()
+# if day=="friday" or day=="saturday":
+#     print("free time")
+# else: 
+#     print("Study time!")
+
+#exercise_3.py — შეფასების კალკულატორი
+score=int(input("Enter your score:"))
+if score >= 90:
+    print("A")
+elif score >=80:
+    print("B")
+elif score >=70:
+    print("C") 
+else:
+    print("F")
+
+#exercise_4.py — კომფორტული ტემპერატურა
+temp=float(input("Enter the temperature:"))
+if  18 <= temp <= 25:
+    print("comfortable: true")
+else:
+    print("false")
+
+#exercise_5.py — ბონუსი: ერთხაზიანი სტატუსი
+age=int(input("how old are you?"))
+if age >= 18:
+    print("adult")
+else:
+    print("minor ")

@@ -1,0 +1,84 @@
+#exercise_1.py — About me, from input
+name=input("what is you name?")
+age=int(input("how old are u?"))
+city=input("what city do u live in?")
+print(f"my name is{name}, I am {age} years old, and I live in {city}")
+print(f"in 5 years I will be {age+5}")
+
+#exercise_2.py — Fix the bug
+
+age = input("How old are you?\n")
+print("Next year you will be " + (age + 1))  # BUG: fix this line
+
+#corected
+age=int(input("how old are you?\n"))
+print(f"next year you will be {age+1}") 
+
+#exercise_3.py — გაასუფთავეთ input
+name = input("Enter your full name:\n")
+cleaned_name = name.strip().title()
+
+print(f"Cleaned name: {cleaned_name}")
+print(f"Length: {len(cleaned_name)}")
+
+#example
+name=input("enter your city \n")
+cleaned_name=name.strip().title()
+print(f"cleaned city: {cleaned_name}")
+print(f"length: {len(cleaned_name)}")
+
+#examp2
+name=input("what is your name?\n")
+clean_name=name.strip().title()
+print(f"cleaned name: {clean_name}")
+print(f"length: {len(clean_name)}")
+print(f"hello {clean_name}!")
+
+#example3
+name=input("enter your name")
+age=int(input("enter your age"))
+city=input("enter your city")
+cleaned_name=name.strip().title()
+cleaned_city=city.strip().title()
+print(f"Name: {cleaned_name}")
+print(f"age: {age}")
+print(f"next year you will be {age+1}")
+print(f"City: {cleaned_city}")
+print(f"Name length: {len(cleaned_name)}")
+print(f"profile: {cleaned_name}, {age} from {cleaned_city}")
+
+
+#exercise_4.py — Truthy or falsy
+text=input("type something(or press enter for nothing):")
+print(f"bool of your input:" , bool(text)) #აქ თუ ტექსტის არ შევიყვანთ და პირდაპირ დავაჭერთ enter-ს ჩათვლის რომ ცარიელია და გამოგვიტანს fales, თუ რამე ტექსტს შევიტანთ და ისე დავაჭერთ enter-ს მაშინ True გახდება. მგონი სწორად ავხსენი
+print('bool("0"):', bool("0")) # "0" არის არაცარიელი, ეს არის სტრინგი და ამიტომ ეს იქნება true
+
+#1 exersice
+text=input("input your name:")
+print("bool of your name:", bool(text))
+print('bool(""):', bool(""))
+print('bool("false"):', bool("false"))
+
+#2
+user_info=input("type something:")
+print("your input is:", bool(user_info))
+print('bool(""):', bool(""))
+print('bool("0"):', bool("0"))
+print('bool("hello"):', bool("hello"))
+
+#3
+age=int(input("how old are you"))
+print(f"you are {age} years old")
+print(f"in 5 years,you will be {age+5} years old")
+
+#exercise_5.py — ბონუსი: ფასი დღგ-ით
+price = float(input("Enter a price: "))
+VAT_RATE = 0.18
+total = price + price * VAT_RATE
+print("Total with VAT:", round(total, 2))
+
+#2
+price=float(input("enter your price"))
+VAT_RATE= 0.18
+total=price+price*VAT_RATE
+print("total with VAT:", round(total,2))
